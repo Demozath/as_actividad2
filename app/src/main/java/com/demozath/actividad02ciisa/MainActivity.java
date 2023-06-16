@@ -10,7 +10,10 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +47,23 @@ public class MainActivity extends AppCompatActivity {
             Vibrator vibracionError = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
             vibracionError.vibrate(1000);
         }
+    }
+
+    public void registro_usuarios(View view){
+
+    TextView registro_usuarios = (TextView) findViewById(R.id.registro_usuarios);
+    registro_usuarios.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent (MainActivity.this,activity_registro_usuarios.class);
+            startActivity(intent);
+        }
+    });
+
+
+
+
+
 
     }
 }

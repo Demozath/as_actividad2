@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">actividad02ciisa</string>
+    <string name="ru_cabecera">"User Registration "</string>
+    <string name="ru_nombre">Name</string>
+    <string name="ru_apellido">Last Name</string>
+</resources>

@@ -11,14 +11,96 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="145dp"
+        android:textSize="46sp"
         android:text="Bienvenido/a"
         android:textColor="@color/white"
-        android:textSize="46sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="395dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="164dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1_ru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/et1_ru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nombre del libro" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="380dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="383dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv2_ru"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="Autor:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et2_ru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nombre del autor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="363dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
