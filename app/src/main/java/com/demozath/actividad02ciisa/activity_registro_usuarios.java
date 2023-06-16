@@ -2,11 +2,18 @@ package com.demozath.actividad02ciisa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.CalendarView;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class activity_registro_usuarios extends AppCompatActivity {
 
@@ -20,7 +27,29 @@ public class activity_registro_usuarios extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, sexo);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        EditText fecha_nacimiento = findViewById(R.id.fecha_nacimiento);
+        fecha_nacimiento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                int mes = calendar.get(Calendar.MONTH);
+                int dia = calendar.get(Calendar.DAY_OF_MONTH);
+                int año = calendar.get(Calendar.YEAR);
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(activity_registro_usuarios.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        String fechaSeleccionada = dayOfMonth + "/" + month + "/" + year;
+                        fecha_nacimiento.setText(fechaSeleccionada);
+                    }
+                },año, mes, dia);
+                datePickerDialog.show();
+            }
+        });
     }
+
+
 
 
 
