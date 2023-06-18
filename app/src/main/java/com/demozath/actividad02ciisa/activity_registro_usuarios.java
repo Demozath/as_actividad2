@@ -44,6 +44,7 @@ public class activity_registro_usuarios extends AppCompatActivity {
                         fecha_nacimiento.setText(fechaSeleccionada);
                     }
                 },año, mes, dia);
+                datePickerDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
                 datePickerDialog.show();
             }
         });

@@ -4,4 +4,8 @@
     <string name="ru_cabecera">"User Registration "</string>
     <string name="ru_nombre">Name</string>
     <string name="ru_apellido">Last Name</string>
+    <string name="am_et_user">User</string>
+    <string name="am_et_pass">Password</string>
+    <string name="am_btn_ingresar">Login</string>
+    <string name="am_tv_registro_usuarios">User Registration</string>
 </resources>

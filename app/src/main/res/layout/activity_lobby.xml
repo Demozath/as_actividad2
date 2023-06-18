@@ -14,9 +14,9 @@
         android:layout_marginTop="51dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="145dp"
-        android:textSize="46sp"
         android:text="Bienvenido/a"
         android:textColor="@color/white"
+        android:textSize="46sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,9 +25,11 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="395dp"
-        android:layout_height="98dp"
+        android:layout_height="0dp"
         android:layout_marginTop="164dp"
+        android:layout_marginBottom="101dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,18 +44,18 @@
                 android:id="@+id/tv1_ru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="Nombre:" />
+                android:text="Nombre:"
+                android:textColor="@color/white" />
 
             <EditText
                 android:id="@+id/et1_ru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/gray"
-                android:textColorHint="@color/gray"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Nombre del libro" />
+                android:text="Nombre del libro"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray" />
 
         </LinearLayout>
 
@@ -86,11 +88,11 @@
                 android:id="@+id/et2_ru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/gray"
-                android:textColorHint="@color/gray"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Nombre del autor" />
+                android:text="Nombre del autor"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray" />
         </LinearLayout>
 
     </LinearLayout>
@@ -99,8 +101,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="320dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

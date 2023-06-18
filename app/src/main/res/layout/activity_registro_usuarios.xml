@@ -11,7 +11,7 @@
         android:id="@+id/textView3"
         android:layout_width="321dp"
         android:layout_height="110dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/ru_cabecera"
         android:textColor="@color/black"
         android:textSize="46sp"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:importantForAccessibility="yes"
-            android:text="Apellido:"
+            android:text="@string/ru_apellido"
             android:textColor="@color/black" />
 
         <EditText
@@ -63,7 +63,7 @@
             android:id="@+id/tv1_ru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre:"
+            android:text="@string/ru_nombre"
             android:textColor="@color/black" />
 
         <EditText
