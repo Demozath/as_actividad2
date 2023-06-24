@@ -46,8 +46,13 @@ public class activity_registro_usuarios extends AppCompatActivity {
                 },año, mes, dia);
                 datePickerDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
                 datePickerDialog.show();
+
+
             }
+
         });
+
+
     }
 
 
